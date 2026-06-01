@@ -17,7 +17,7 @@ html{
 header{
     position: fixed;
     top: 0; left: 0; right: 0;
-    background: #fff;
+    background: #ffffff;
     padding:2rem 9%;
     display: flex;
     align-items: center;
@@ -66,3 +66,51 @@ header .fa-bars{
     border: .1rem solid rgba(0,0,0,0.3);
    display: none; 
 }
+
+
+
+
+
+@media (max-width:991px){
+   html{
+    font-size: 55%;
+   
+} 
+}
+@media (max-width:768px){
+    header .fa-bars{
+        display: block;
+    }
+  
+header .navbar{
+    position: absolute;
+    top: 100%; left: 0; right: 0;
+    background: #eee;
+    border-top: .1rem solid rgba(0,0,0,.1);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+}
+header #toggler:checked ~ .navbar{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+header .navbar a{
+    margin:1.5rem;
+    padding:1.5rem;
+    background: #fff;
+    border: .1rem solid rgba(0,0,0,.1);
+    display: block;
+}
+
+}
+@media (max-width:450px){
+    html{
+        font-size:50%;
+    }
+} 
+<section class="home" id=home>
+<div class content="content">
+<h3> Discover Your /h3>
+<span>Natural Glow</span>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+<a href="#" class="btn">shop now
+
